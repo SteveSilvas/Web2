@@ -1,0 +1,15 @@
+.Form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0px 20%;
+    height: 100%;
+}
+
+.Row{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin: 10px;
+}
+

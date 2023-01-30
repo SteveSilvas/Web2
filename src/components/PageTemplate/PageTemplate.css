@@ -1,0 +1,6 @@
+.PageTemplate{
+    width: 40%;
+    overflow: hidden;
+    border: 2px solid #c3c3c3;
+    border-radius: 15px;
+}

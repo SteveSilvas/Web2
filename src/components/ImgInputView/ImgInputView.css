@@ -1,0 +1,12 @@
+.ImageBox{
+    margin: 0px;
+    width:  100%;
+}
+
+.ImgContent{
+    height: 5rem;
+}
+
+.AddImgIcon{
+    cursor: pointer;
+}

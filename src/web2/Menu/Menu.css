@@ -1,0 +1,32 @@
+
+.MenuTab {
+  display: flex;
+  width: 100%;
+  height: 6vh;
+  background-color: aliceblue;
+  padding: 1vh 0px;
+  justify-content: space-evenly;
+}
+
+.PanelCenter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.ButtonMenu {
+  width: 200px;
+  background-color: rgb(123, 123, 252);
+  border: solid 1px rgb(150, 150, 244);
+  border-radius: 4px;
+  font-size: 1.1rem;
+  transition: 0.3s;
+}
+
+.ButtonMenu:hover {
+  width: 200px;
+  background-color: rgb(150, 150, 244);
+  border: solid 1px rgb(123, 123, 252);
+  font-size: 1.3rem;
+  cursor: pointer;
+}
