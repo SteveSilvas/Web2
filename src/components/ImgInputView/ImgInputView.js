@@ -1,6 +1,6 @@
 import React from "react";
 import "./ImgInputView.css"
-
+import Input from "../Input/Input";
 class ImgInputView extends React.Component {
 
     constructor(props) {
@@ -30,7 +30,7 @@ class ImgInputView extends React.Component {
               <div>
                   <label>Link da imagem</label>
               </div>
-                <input type="text" onChange={(e) => this.setState({src: e.target.value})} onKeyDown={ (e) => this.handleKeyDown(e)}/>
+                <Input type="text" onChange={(e) => this.setState({src: e.target.value})} onKeyDown={ (e) => this.handleKeyDown(e)}/>
             </div>
         );
     }

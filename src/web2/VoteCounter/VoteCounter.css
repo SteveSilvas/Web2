@@ -1,0 +1,31 @@
+.VoteCounter{
+    padding: 5%
+}
+
+.VoteCounterNav{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 2rem;
+}
+
+.VoteCounterPlacar{
+    border: 1px solid black;
+    border-radius: 15px;
+}
+.VotesPanelRow{
+    display: flex;
+    justify-content: space-around;
+}
+
+.VotesPainel{
+    display: flex;
+    flex-direction: column;
+    align-items: space-between;
+    background-color: aliceblue;
+    border: 1px solid rgb(123, 123, 252);
+    border-radius: 15px;
+    height: 10rem;
+    width: 10rem;
+    gap:20%;
+    margin-bottom: 5rem;
+}

@@ -4,6 +4,7 @@ import PeopleProfile from "../PeopleProfile/PeopleProfile";
 import Clock from "../Clock/Clock";
 import "./Menu.css";
 import PageTemplate from "../../components/PageTemplate/PageTemplate";
+import VoteCounter from "../VoteCounter/VoteCounter";
 
 class Menu extends React.Component {
   constructor(props) {
@@ -31,6 +32,7 @@ class Menu extends React.Component {
           <button className="ButtonMenu" onClick={(e) => this.onClickClock(e)}>Clock</button>
           <button className="ButtonMenu" onClick={(e) => this.onClickImc(e)}>IMC</button>
           <button className="ButtonMenu" onClick={(e) => this.onClickPeopleProfile(e)}>Perfil Pessoal</button>
+          <button className="ButtonMenu" onClick={(e) => this.onClickVoteCounter(e)}>Contador de votos</button>
         </div>
         <div className="PanelCenter">
             <PageTemplate>
@@ -45,7 +47,8 @@ class Menu extends React.Component {
     this.setState({
       showClock: false,
       showImc: false,
-      showPeopleProfile: false
+      showPeopleProfile: false,
+      showVoteCounter: false
     })
   }
 
@@ -70,12 +73,19 @@ class Menu extends React.Component {
     this.setState({showPeopleProfile: true});
   }
 
+  onClickVoteCounter(e){
+    this.clearSelectedTabs();
+    e.stopPropagation();
+    this.setState({showVoteCounter: true});
+  }
+
   renderComponents(){
     return(
       <>
         {this.renderClock()}
         {this.renderImc()}
         {this.renderPeopleProfile()}
+        {this.renderCounter()}
       </>
     );
   }
@@ -90,6 +100,10 @@ class Menu extends React.Component {
 
   renderPeopleProfile(){
     return (this.state.showPeopleProfile ? <PeopleProfile/> : "");
+  }
+
+  renderCounter(){
+    return (this.state.showVoteCounter ? <VoteCounter/> : "");
   }
 
 }

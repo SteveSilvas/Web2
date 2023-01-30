@@ -20,7 +20,7 @@ function PeopleProfile({ nome, nascimento, login, foto }) {
 
             <div className="Row">
                 <label>Nome:</label>
-                <input
+                <Input
                     type="text"
                     value={name}
                     onChange={(e) => setName(e.target.value)}
@@ -30,7 +30,7 @@ function PeopleProfile({ nome, nascimento, login, foto }) {
 
             <div className="Row">
                 <label>Nascimento:</label>
-                <input
+                <Input
                     type="date"
                     value={date}
                     onChange={(e) => setDate(e.target.value)}
